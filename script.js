@@ -1,32 +1,5 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-
-menuToggle.addEventListener('click', () => {
-  const open = navLinks.classList.toggle('open');
-  menuToggle.setAttribute('aria-expanded', open);
-});
-
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
-});
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
-  });
-}, { threshold: 0.12 });
-
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-document.getElementById('year').textContent = new Date().getFullYear();
-
-document.getElementById('quoteForm').addEventListener('submit', (event) => {
-  event.preventDefault();
-  const name = document.getElementById('name').value.trim();
-  const date = document.getElementById('date').value || 'Por definir';
-  const city = document.getElementById('city').value.trim() || 'Por definir';
-  const service = document.getElementById('service').value;
-  const details = document.getElementById('details').value.trim() || 'Sin detalles adicionales';
-
-  const message = `Hola DH Productions, soy ${name}. Quiero una cotización.\n\nFecha: ${date}\nCiudad: ${city}\nServicio: ${service}\nDetalles: ${details}`;
-  window.open(`https://wa.me/15105866672?text=${encodeURIComponent(message)}`, '_blank');
-});
+const menuBtn=document.querySelector('.menu-btn');const nav=document.querySelector('.nav');menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',open);menuBtn.textContent=open?'✕':'☰'});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.textContent='☰'}));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('quoteForm').addEventListener('submit',e=>{e.preventDefault();const v=id=>document.getElementById(id).value.trim();const msg=`Hola DH Productions, quiero una cotización.%0A%0ANombre: ${encodeURIComponent(v('name'))}%0AFecha: ${encodeURIComponent(v('date')||'Por confirmar')}%0ACiudad: ${encodeURIComponent(v('city')||'Por confirmar')}%0AEvento: ${encodeURIComponent(v('eventType'))}%0AServicio: ${encodeURIComponent(v('service'))}%0ADetalles: ${encodeURIComponent(v('details')||'Sin detalles adicionales')}`;window.open(`https://wa.me/15105866672?text=${msg}`,'_blank','noopener')});
+const dialog=document.getElementById('lightbox');const dialogImg=dialog.querySelector('img');document.querySelectorAll('.gallery-item img').forEach(img=>img.parentElement.addEventListener('click',()=>{dialogImg.src=img.src;dialogImg.alt=img.alt;dialog.showModal()}));dialog.querySelector('button').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
