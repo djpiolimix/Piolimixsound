@@ -1,0 +1,9 @@
+{
+  "name": "DH Productions / DJ PíoLiMiX",
+  "short_name": "DH Productions",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090b10",
+  "theme_color": "#090b10",
+  "icons": []
+}

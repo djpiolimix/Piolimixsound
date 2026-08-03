@@ -1,14 +1,16 @@
-# Sitio DH Productions / DJ PíoLiMiX — versión para iPhone
+# PioliMixSound 2.0 Pro
 
-Esta versión no usa carpetas. Todos los archivos se suben juntos a la raíz del repositorio de GitHub.
+Sitio oficial de DH Productions / DJ PíoLiMiX.
 
-## Subir desde iPhone
+## Publicación en GitHub Pages
+1. Sube todos los archivos y la carpeta `assets` al directorio raíz del repositorio.
+2. Confirma los cambios en la rama `main`.
+3. Espera 1–3 minutos.
+4. Abre https://piolimixsound.com/
 
-1. En GitHub abre el repositorio `Piolimixsound`.
-2. Pulsa **Add file → Upload files**.
-3. Selecciona todos los archivos de esta carpeta.
-4. Elige **Commit directly to the main branch**.
-5. Pulsa **Commit changes**.
-6. Espera 1–3 minutos y abre `https://piolimixsound.com`.
+## Google Search Console
+Después de publicar, envía:
+https://piolimixsound.com/sitemap.xml
 
-Incluye el sitio, logotipo, favicon, imagen principal, foto del equipo y 10 fotos de galería.
+Teléfono/WhatsApp configurado: (510) 586-6672
+Instagram: @hernandezsoundrental
