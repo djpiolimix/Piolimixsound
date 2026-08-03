@@ -1,18 +1,14 @@
-# PioliMixSound 2.0 — versión plana para iPhone
+# Sitio DH Productions / DJ PíoLiMiX — versión para iPhone
 
-Esta versión no contiene carpetas. Todos los archivos están juntos para poder
-seleccionarlos de una sola vez desde la aplicación Archivos del iPhone.
+Esta versión no usa carpetas. Todos los archivos se suben juntos a la raíz del repositorio de GitHub.
 
-## Cómo subirla a GitHub desde iPhone
+## Subir desde iPhone
 
-1. Descarga y descomprime `piolimixsound-v2-iphone-flat.zip`.
-2. Abre la carpeta descomprimida.
-3. Pulsa los tres puntos → Seleccionar.
-4. Pulsa Seleccionar todo.
-5. En GitHub abre `Add file` → `Upload files` → `choose your files`.
-6. Selecciona todos los archivos y pulsa Abrir.
-7. Espera a que termine la carga.
-8. Pulsa `Commit changes`.
+1. En GitHub abre el repositorio `Piolimixsound`.
+2. Pulsa **Add file → Upload files**.
+3. Selecciona todos los archivos de esta carpeta.
+4. Elige **Commit directly to the main branch**.
+5. Pulsa **Commit changes**.
+6. Espera 1–3 minutos y abre `https://piolimixsound.com`.
 
-Todos los archivos deben quedar directamente en la raíz del repositorio.
-No subas el archivo ZIP sin descomprimir.
+Incluye el sitio, logotipo, favicon, imagen principal, foto del equipo y 10 fotos de galería.
